@@ -2,7 +2,7 @@ package com.example.questionpapergeneration;
 
 import com.example.questionpapergeneration.Model.Difficulty;
 import com.example.questionpapergeneration.Model.Subject;
-import com.example.questionpapergeneration.Model.TEMPLATE_TOPIC;
+import com.example.questionpapergeneration.Model.FilterCriteria;
 import com.example.questionpapergeneration.Service.AdminService;
 import com.example.questionpapergeneration.Service.QuestionPaperServive;
 import org.springframework.boot.SpringApplication;
@@ -27,11 +27,9 @@ public class QuestionPaperGenerationApplication {
 
         adminService.addQuestionToQuestionBank("What is diameter of earth", Subject.SST,"SolarSystem", Difficulty.MEDIUM,20);
 
-        questionPaperServive.basedOnTopic(10, TEMPLATE_TOPIC.DIFFICULTY,new HashMap<String,Integer>(){{put("EASY",4);}});
+        questionPaperServive.basedOnFilterCriteria(10, FilterCriteria.DIFFICULTY,new HashMap<String,Integer>(){{put("EASY",4);}});
 
-      //  questionPaperServive.basedOnTopic(10, TEMPLATE_TOPIC.TOPIC,new HashMap<String,Integer>(){{put("OS",4);put("DS",6);}});
-
+        questionPaperServive.basedOnFilterCriteria(10, FilterCriteria.TOPIC,new HashMap<String,Integer>(){{put("OS",4);put("DS",6);}});
 
     }
-
 }

@@ -5,7 +5,6 @@ import com.example.questionpapergeneration.Model.Difficulty;
 import com.example.questionpapergeneration.Model.Question;
 
 import java.util.*;
-import java.util.stream.IntStream;
 
 //singleton class
 public class QuestionDao {
@@ -22,31 +21,31 @@ public class QuestionDao {
     }
 
     public void addQuestion(Question questionPaper) {
-        if(questionBank.containsKey(questionPaper.getUid())){
+        if(questionBank.containsKey(questionPaper.getQuestionId())){
             throw new BookIdAlreadyExistsExcepion("Book Id Already Exists. Try Adding again");
         }
-        questionBank.put(questionPaper.getUid(),questionPaper);
-        System.out.println(questionPaper.getUid()+" added to qusetionBank");
+        questionBank.put(questionPaper.getQuestionId(),questionPaper);
+        System.out.println(questionPaper.getQuestionId()+" added to qusetionBank");
     }
 
-    public List<Question> getQuestionOnDifficulty(HashMap<String, Integer> template_ratio) {
+    public List<Question> getQuestionsOnDifficulty(HashMap<String, Integer> template_ratio) {
 
         List<Question> questions = new ArrayList<>();
         //Assuming easy questions are of 2 marks, medium of 5 marks, hard of 10 marks
         for (Map.Entry mapEntry:
         template_ratio.entrySet()) {
-            if(mapEntry.getKey()== "EASY")
+            if(mapEntry.getKey().equals("EASY"))
             {
                 List<Question> easyQuestionList = getQuestions(Difficulty.EASY);
                 int no_of_questions = (int)mapEntry.getValue()/2;
                 questions.addAll(getRandomElement(easyQuestionList,no_of_questions));
             }
-            else if(mapEntry.getKey()== "MEDIUM"){
+            else if(mapEntry.getKey().equals("MEDIUM")){
                 List<Question> mediumQuestionList = getQuestions(Difficulty.MEDIUM);
                 int no_of_questions = (int)mapEntry.getValue()/5;
                 questions.addAll(getRandomElement(mediumQuestionList,no_of_questions));
             }
-            else if(mapEntry.getKey()== "HARD"){
+            else if(mapEntry.getKey().equals("HARD")){
                 List<Question> hardQuestionList = getQuestions(Difficulty.HARD);
                 int no_of_questions = (int)mapEntry.getValue()/10;
                 questions.addAll(getRandomElement(hardQuestionList,no_of_questions));
@@ -62,7 +61,7 @@ public class QuestionDao {
         for (Map.Entry mapEntry:
              questionBank.entrySet()) {
             Question question = (Question) mapEntry.getValue();
-            if(question.getDifficultyLevel()== difficulty)
+            if(question.getDifficultyLevel().equals(difficulty))
                 questionList.add(question);
         }
         return questionList;
@@ -72,9 +71,9 @@ public class QuestionDao {
     {
         Random rand = new Random();
 
-        // create a temporary list for storing
+        // create a temporary set for storing
         // selected element
-        List<Question> newList = new ArrayList<>();
+        Set<Question> questionSet = new HashSet<>();
         for (int i = 0; i < totalItems; i++) {
 
             if(list.size()==0)
@@ -84,9 +83,9 @@ public class QuestionDao {
             int randomIndex = rand.nextInt(list.size());
 
             // add element in temporary list
-            newList.add(list.get(randomIndex));
+            questionSet.add(list.get(randomIndex));
             list.remove(list.get(randomIndex));
         }
-        return newList;
+        return new ArrayList<>(questionSet);
     }
 }

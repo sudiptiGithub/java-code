@@ -1,6 +1,6 @@
 package com.example.questionpapergeneration.Model;
 
-public enum TEMPLATE_TOPIC {
+public enum FilterCriteria {
 
     TOPIC, SUBJECT, DIFFICULTY
 }
