@@ -1,0 +1,82 @@
+2022-06-05 17:46:45.164  INFO 52728 --- [restartedMain] c.s.s.s.StudentServicesApplication       : Starting StudentServicesApplication using Java 17.0.2 on BLRETV-C02FM2CZ.local with PID 52728 (/Users/sudipti.kiran/my-personal-workspace/student-services/target/classes started by sudipti.kiran in /Users/sudipti.kiran/my-personal-workspace/student-services)
+2022-06-05 17:46:45.165  INFO 52728 --- [restartedMain] c.s.s.s.StudentServicesApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-06-05 17:46:45.199  INFO 52728 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-05 17:46:45.199  INFO 52728 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-05 17:46:45.979  INFO 52728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-06-05 17:46:45.984  INFO 52728 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-05 17:46:45.984  INFO 52728 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-05 17:46:46.026  INFO 52728 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-05 17:46:46.026  INFO 52728 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 827 ms
+2022-06-05 17:46:46.422  INFO 52728 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-05 17:46:46.425  INFO 52728 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-06-05 17:46:46.458  INFO 52728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-06-05 17:46:46.472  INFO 52728 --- [restartedMain] c.s.s.s.StudentServicesApplication       : Started StudentServicesApplication in 1.552 seconds (JVM running for 2.241)
+2022-06-05 17:46:46.596  INFO 52728 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-05 17:46:46.596  INFO 52728 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-05 17:46:46.597  INFO 52728 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-05 17:49:44.601  INFO 53047 --- [restartedMain] c.s.s.s.StudentServicesApplication       : Starting StudentServicesApplication using Java 17.0.2 on BLRETV-C02FM2CZ.local with PID 53047 (/Users/sudipti.kiran/my-personal-workspace/student-services/target/classes started by sudipti.kiran in /Users/sudipti.kiran/my-personal-workspace/student-services)
+2022-06-05 17:49:44.602  INFO 53047 --- [restartedMain] c.s.s.s.StudentServicesApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-06-05 17:49:44.638  INFO 53047 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-05 17:49:44.638  INFO 53047 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-05 17:49:45.491  INFO 53047 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-06-05 17:49:45.497  INFO 53047 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-05 17:49:45.497  INFO 53047 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-05 17:49:45.540  INFO 53047 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-05 17:49:45.541  INFO 53047 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 903 ms
+2022-06-05 17:49:45.967  INFO 53047 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-05 17:49:45.971  INFO 53047 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-06-05 17:49:46.005  INFO 53047 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-06-05 17:49:46.018  INFO 53047 --- [restartedMain] c.s.s.s.StudentServicesApplication       : Started StudentServicesApplication in 1.627 seconds (JVM running for 2.257)
+2022-06-05 17:49:46.415  INFO 53047 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-05 17:49:46.415  INFO 53047 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-05 17:49:46.416  INFO 53047 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-05 17:50:24.873  INFO 53183 --- [restartedMain] c.s.s.s.StudentServicesApplication       : Starting StudentServicesApplication using Java 17.0.2 on BLRETV-C02FM2CZ.local with PID 53183 (/Users/sudipti.kiran/my-personal-workspace/student-services/target/classes started by sudipti.kiran in /Users/sudipti.kiran/my-personal-workspace/student-services)
+2022-06-05 17:50:24.874  INFO 53183 --- [restartedMain] c.s.s.s.StudentServicesApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-06-05 17:50:24.911  INFO 53183 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-05 17:50:24.911  INFO 53183 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-05 17:50:25.702  INFO 53183 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-06-05 17:50:25.707  INFO 53183 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-05 17:50:25.708  INFO 53183 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-05 17:50:25.754  INFO 53183 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-05 17:50:25.755  INFO 53183 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 843 ms
+2022-06-05 17:50:26.165  INFO 53183 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-05 17:50:26.169  INFO 53183 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-06-05 17:50:26.200  INFO 53183 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-06-05 17:50:26.215  INFO 53183 --- [restartedMain] c.s.s.s.StudentServicesApplication       : Started StudentServicesApplication in 1.545 seconds (JVM running for 1.995)
+2022-06-05 17:50:26.458  INFO 53183 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-05 17:50:26.459  INFO 53183 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-05 17:50:26.462  INFO 53183 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-06-05 17:58:35.229  INFO 53820 --- [restartedMain] c.s.s.s.StudentServicesApplication       : Starting StudentServicesApplication using Java 17.0.2 on BLRETV-C02FM2CZ.local with PID 53820 (/Users/sudipti.kiran/my-personal-workspace/student-services/target/classes started by sudipti.kiran in /Users/sudipti.kiran/my-personal-workspace/student-services)
+2022-06-05 17:58:35.231  INFO 53820 --- [restartedMain] c.s.s.s.StudentServicesApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-06-05 17:58:35.268  INFO 53820 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-05 17:58:35.268  INFO 53820 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-05 17:58:36.021  INFO 53820 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-06-05 17:58:36.026  INFO 53820 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-05 17:58:36.026  INFO 53820 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-05 17:58:36.069  INFO 53820 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-05 17:58:36.069  INFO 53820 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 800 ms
+2022-06-05 17:58:36.457  INFO 53820 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-05 17:58:36.460  INFO 53820 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-06-05 17:58:36.490  INFO 53820 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-06-05 17:58:36.502  INFO 53820 --- [restartedMain] c.s.s.s.StudentServicesApplication       : Started StudentServicesApplication in 1.48 seconds (JVM running for 2.164)
+2022-06-05 17:58:36.593  INFO 53820 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-05 17:58:36.594  INFO 53820 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-05 17:58:36.595  INFO 53820 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-05 18:06:06.269  INFO 54478 --- [restartedMain] c.s.s.s.StudentServicesApplication       : Starting StudentServicesApplication using Java 17.0.2 on BLRETV-C02FM2CZ.local with PID 54478 (/Users/sudipti.kiran/my-personal-workspace/student-services/target/classes started by sudipti.kiran in /Users/sudipti.kiran/my-personal-workspace/student-services)
+2022-06-05 18:06:06.272  INFO 54478 --- [restartedMain] c.s.s.s.StudentServicesApplication       : No active profile set, falling back to default profiles: default
+2022-06-05 18:06:06.305  INFO 54478 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-05 18:06:06.306  INFO 54478 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-05 18:06:06.921  INFO 54478 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-06-05 18:06:06.927  INFO 54478 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-05 18:06:06.927  INFO 54478 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2022-06-05 18:06:06.973  INFO 54478 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-05 18:06:06.973  INFO 54478 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 667 ms
+2022-06-05 18:06:07.115  INFO 54478 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-05 18:06:07.326  INFO 54478 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-05 18:06:07.330  INFO 54478 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-06-05 18:06:07.359  INFO 54478 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-06-05 18:06:07.369  INFO 54478 --- [restartedMain] c.s.s.s.StudentServicesApplication       : Started StudentServicesApplication in 1.373 seconds (JVM running for 2.091)
+2022-06-05 18:06:07.750  INFO 54478 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-05 18:06:07.750  INFO 54478 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-05 18:06:07.751  INFO 54478 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-05 18:58:43.915  INFO 54478 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
