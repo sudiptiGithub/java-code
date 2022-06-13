@@ -4,6 +4,7 @@ import com.springProject.springBoot.studentservices.model.Course;
 import com.springProject.springBoot.studentservices.model.Student;
 import org.springframework.stereotype.Component;
 
+import java.math.BigInteger;
 import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +17,7 @@ public class StudentService {
 
     static {
         //Initialize Data
-        Course course1 = new Course("Course1", "Spring", "10 Steps", Arrays
+        Course course1 = new Course("Course1", "Spring", "10Steps", Arrays
                 .asList("Learn Maven", "Import Project", "First Example",
                         "Second Example"));
         Course course2 = new Course("Course2", "Spring MVC", "10 Examples",
@@ -73,19 +74,22 @@ public class StudentService {
         return null;
     }
 
+
     private SecureRandom random = new SecureRandom();
 
-    public boolean addCourse(String studentId, Course course){
+    public Course addCourse(String studentId, Course course) {
         Student student = retrieveStudent(studentId);
-        if(student == null)
-            return false;
-        if(retrieveCourse(studentId, course.getId())!=null){
-            System.out.println("Course already exists");
-            return false;
+
+        if (student == null) {
+            return null;
         }
+
+        String randomId = new BigInteger(130, random).toString(32);
+        course.setId(randomId);
+
         student.getCourses().add(course);
 
-        return true;
+        return course;
     }
 
 }

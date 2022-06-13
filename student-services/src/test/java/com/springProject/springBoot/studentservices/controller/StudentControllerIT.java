@@ -41,7 +41,7 @@ public class StudentControllerIT {
 
         String expected = "{id:Course1,name:Spring,description:10Steps}";
 
-        JSONAssert.assertEquals(expected, response.getBody(), false);
+        JSONAssert.assertEquals(expected,response.getBody(),false);
     }
 
     @Test
@@ -54,12 +54,12 @@ public class StudentControllerIT {
         HttpEntity<Course> entity = new HttpEntity<Course>(course, headers);
 
         ResponseEntity<String> response = restTemplate.exchange(
-                createURLWithPort("/students/Student1/courses"),
+                createURLWithPort("api/students/Student1/courses"),
                 HttpMethod.POST, entity, String.class);
 
         String actual = response.getHeaders().get(HttpHeaders.LOCATION).get(0);
 
-        assertTrue(actual.contains("/students/Student1/courses/"));
+        assertTrue(actual.contains("api/students/Student1/courses/"));
 
     }
 

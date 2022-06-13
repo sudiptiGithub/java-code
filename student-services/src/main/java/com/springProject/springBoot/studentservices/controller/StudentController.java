@@ -4,9 +4,12 @@ package com.springProject.springBoot.studentservices.controller;
 import com.springProject.springBoot.studentservices.model.Course;
 import com.springProject.springBoot.studentservices.model.Student;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import com.springProject.springBoot.studentservices.service.StudentService;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import java.net.URI;
 import java.util.*;
 
 @RestController
@@ -33,13 +36,21 @@ public class StudentController {
         return studentService.retrieveCourse(studentId,courseId);
     }
 
-    @PostMapping("{studentId}/course")
-    public boolean registerStudentForCourse(
+    @PostMapping("/{studentId}/courses")
+    public ResponseEntity<Void> registerStudentForCourse(
             @PathVariable String studentId, @RequestBody Course newCourse) {
-        boolean isAdded = studentService.addCourse(studentId,newCourse);
-        return isAdded;
 
+        Course course = studentService.addCourse(studentId, newCourse);
+
+        if (course == null)
+            return ResponseEntity.noContent().build();
+
+        URI location = ServletUriComponentsBuilder.fromCurrentRequest().path(
+                "/{id}").buildAndExpand(course.getId()).toUri();
+
+        return ResponseEntity.created(location).build();
     }
+
 
 }
 
